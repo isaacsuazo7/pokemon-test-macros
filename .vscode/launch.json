@@ -7,19 +7,11 @@
         {
             "name": "pokemon-test-macros",
             "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "pokemon-test-macros (profile mode)",
-            "request": "launch",
             "type": "dart",
-            "flutterMode": "profile"
+            "toolArgs": [
+                "--enable-experiment=macros"
+            ]
         },
-        {
-            "name": "pokemon-test-macros (release mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        }
+
     ]
 }
