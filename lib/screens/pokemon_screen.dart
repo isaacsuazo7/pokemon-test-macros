@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:pokemonmacros/models/pokemon_js.dart';
+import 'package:pokemonmacros/models/pokemon.dart';
 import 'package:pokemonmacros/provider/pokemon_provider.dart';
 
 class PokemonScreen extends ConsumerWidget {
@@ -37,8 +37,7 @@ class PokemonScreen extends ConsumerWidget {
 }
 
 class _Pokemon extends StatelessWidget {
-  final PokemonJS pokemon;
-  // final Pokemon pokemon;
+  final Pokemon pokemon;
   const _Pokemon({required this.pokemon});
 
   @override

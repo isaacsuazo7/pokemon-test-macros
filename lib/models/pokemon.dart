@@ -1,3 +1,6 @@
+import 'package:json/json.dart';
+
+@JsonCodable()
 class Pokemon {
   final int id;
   final String name;
@@ -12,6 +15,7 @@ class Pokemon {
   });
 }
 
+@JsonCodable()
 class Other {
   final Home home;
 
@@ -20,17 +24,20 @@ class Other {
   });
 }
 
+@JsonCodable()
 class Sprites {
   final Other? other;
   Sprites({required this.other});
 }
 
+@JsonCodable()
 class Home {
   final String front_default;
 
   Home({required this.front_default});
 }
 
+@JsonCodable()
 class Type {
   final Species type;
 
@@ -39,6 +46,7 @@ class Type {
   });
 }
 
+@JsonCodable()
 class Species {
   final String name;
 
